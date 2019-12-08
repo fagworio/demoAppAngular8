@@ -1,0 +1,15 @@
+<cdk-virtual-scroll-viewport itemSize="20" class="container">
+	<mat-card *cdkVirtualFor="let post of posts" class="content-card">
+		<mat-card-title>
+			<h1 class="mat-card-title">{{ post.title | titlecase }}</h1>
+		</mat-card-title>
+		<mat-card-content>
+			<p>
+				{{ post.body }}
+			</p>
+		</mat-card-content>
+		<mat-card-actions>
+			<button mat-stroked-button color="primary">Leia Mais</button>
+		</mat-card-actions>
+	</mat-card>
+</cdk-virtual-scroll-viewport>

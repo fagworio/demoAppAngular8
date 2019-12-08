@@ -1,0 +1,14 @@
+
+<cdk-virtual-scroll-viewport itemSize="20" class="lazy-viewport">
+	<div class="row"> 
+		<div *cdkVirtualFor="let image of images" class="column">
+				<img [attr.src]="image.url" 
+				alt="{{ image.title }}" style="width:100%">
+		</div>
+	</div>
+</cdk-virtual-scroll-viewport>
+
+
+
+
+		
